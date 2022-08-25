@@ -21,17 +21,9 @@ function App() {
           <div className="routes">
             <Routes>
               <Route path="/" element={<Homepage />} />
-            </Routes>
-            <Routes>
               <Route path="/exchanges" element={<Exchanges />} />
-            </Routes>
-            <Routes>
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
-            </Routes>
-            <Routes>
               <Route path="/crypto/:coinId" element={<CryptoDetails />} />
-            </Routes>
-            <Routes>
               <Route path="/news" element={<News />} />
             </Routes>
           </div>
