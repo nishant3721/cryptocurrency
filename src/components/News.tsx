@@ -3,6 +3,7 @@ import moment from "moment";
 import { Card, Row, Col, Typography, Avatar } from "antd";
 
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
+import Loader from "./Loader";
 
 const demoImage =
   "https://image.cnbcfm.com/api/v1/image/106928219-1629130755312-gettyimages-1234311531-sindeyev-notitle210729_np12K.jpeg";
@@ -11,6 +12,8 @@ const News = () => {
   const { data: cryptoNews, isFetching } = useGetCryptoNewsQuery({
     category: "Cryptocurrency",
   });
+
+  if (isFetching) return <Loader />;
 
   return (
     <>
