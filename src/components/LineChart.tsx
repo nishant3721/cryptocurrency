@@ -41,11 +41,11 @@ const LineChart = ({
     ],
   };
 
-  const options: any = {
-    scales: {
-      y: { min: 0 },
-    },
-  };
+  // const options: any = {
+  //   scales: {
+  //     y: { min: 0 },
+  //   },
+  // };
 
   return (
     <>
